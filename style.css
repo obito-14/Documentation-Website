@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Roboto+Condensed:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+.main_container{
+    display: flex;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    height: 100vh;
+    border: 1px solid #000;
+    position: fixed;
+}
+.java_document{
+    border: 1px solid #000;
+    padding: 20px;
+}
+.option a{
+    text-decoration: none;
+}
+.option p{
+    border: 1px solid #000;
+    padding: 20px;
+    color: #000;
+}
+.main_content{
+    padding-left: 30vw;
+    padding: 50px;
+    position: absolute;
+    left: 24vw;
+}
+.adjust{
+    display: block;
+}
+.adjust h1{
+    padding: 10px 0px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.395);
+}
+.adjust p{
+    padding: 15px 0px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.adjust ul li{
+    padding: 15px 0px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.adjust .box{
+    width: 96%;
+    border: 0px solid black;
+    margin: 20px;
+    height: 100px;
+    padding-left: 40px;
+    background: rgba(128, 128, 128, 0.339);
+    border-radius: 2px;
+}
+.box p{
+    padding-top: 30px;
+}
+.box span{
+    padding-top: 10px;
+    display: block;
+}
+@media (max-width:858px) {
+    .main_container{
+        flex-direction: column;
+    }
+    .sidenav{
+        width: 100%;
+        height: 70px;
+        position: relative;
+        text-align: center;
+        
+    }
+    .main_content{
+        position: absolute;
+        top: 350px;
+        left: 0px;
+        width: 100%;
+    }
+    .adjust{
+        padding-left: -20px;
+    }
+}
